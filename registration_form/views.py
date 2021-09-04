@@ -7,7 +7,7 @@ from .models import Language, Topic, Member
 
 main = Blueprint("main", __name__)
 
-
+#test add for github change
 @main.route("/", methods=["GET", "POST"], defaults={"member_id": None})
 @main.route("/<int:member_id>", methods=["GET", "POST"])
 def index(member_id):
